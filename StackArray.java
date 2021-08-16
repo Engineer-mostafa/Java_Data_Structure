@@ -12,11 +12,12 @@ package datastructures;
 
 
 public class StackArray {
-    final static int MAX_SIZE = 100;
+    private int MAX_SIZE;
     private int top;
-    final private int [] items = new int [MAX_SIZE];
-
-    StackArray(){
+    private int [] items;
+    StackArray(int max_size){
+        MAX_SIZE = max_size;
+        items = new int [MAX_SIZE];
         top = -1;
     }
 
