@@ -42,4 +42,9 @@ public class StackArray {
         else top--; return true;
     }
 
+
+    int top(){
+        return isEmpty() ? -1 : items[top];
+    }
+
 }
